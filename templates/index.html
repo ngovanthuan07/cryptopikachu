@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+
+    <div class="container">
+        <div class="chartCard">
+            <div class="chartBox">
+                <canvas id="myChartOne"></canvas>
+            </div>
+            <div class="chartBox">
+                <canvas id="myChartTow"></canvas>
+            </div>
+            <div class="chartBox">
+                <canvas id="myChartThree"></canvas>
+            </div>
+        </div>
+        <div class="chartCard">
+            <div class="chartBox">
+                <canvas id="myChartFour"></canvas>
+            </div>
+            <div class="chartBox">
+                <canvas id="myChartFive"></canvas>
+            </div>
+        </div>
+
+        <table class="table table-bordered" id='myTableId'>
+            <thead>
+            <tr class="text-center">
+                <th scope="col">#</th>
+                <th scope="col">Coin</th>
+                <th scope="col">Price</th>
+                <th scope="col">Direct Vol</th>
+                <th scope="col">Total Vol</th>
+                <th scope="col">Top Tier Vol</th>
+                <th scope="col">Market Cap</th>
+                <th scope="col">24h</th>
+            </tr>
+            </thead>
+            <tbody id="tableCrypto">
+                <tr class="text-center">
+                    <td colspan="8">
+                        <img src="{{url_for('static', filename='images/pikapika.png')}}" alt="No results found" width="20%">
+                        <p class="mt-2 fs-4">Can not data</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+CREATE TABLE crypto (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT, 
+    crypto_id BIGINT NULL, 
+    name VARCHAR(255) NULL,
+    fullname VARCHAR(255) NULL,
+    internal VARCHAR(255) NULL,
+    image_url VARCHAR(255) NULL,
+    url VARCHAR(255) NULL,
+
+    price DOUBLE NULL,
+    top_tier_volume_24_hour_to DOUBLE NULL,
+    total_volume_24h_to DOUBLE NULL,
+    total_top_tier_volume_24h_to DOUBLE NULL,
+    mktcap DOUBLE NULL,
+    change_pct_24_hour DOUBLE NULL,
+
+    created_at TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)

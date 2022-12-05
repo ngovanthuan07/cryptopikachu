@@ -1,0 +1,7 @@
+.chartCard {
+    display: flex;
+    justify-content: center;
+}
+.chartBox {
+    width: 300px;
+}

@@ -1,0 +1,25 @@
+Data -> CoinInfo -> 
+
+    Id
+    Name
+    FullName
+    Internal
+    ImageUrl
+    Url
+
+Data -> RAW -> USD ->
+    Price: PRICE
+    Direct Vol: TOPTIERVOLUME24HOURTO
+    Total Vol: TOTALVOLUME24HTO
+    Top Tier Vol: TOTALTOPTIERVOLUME24HTO
+    Market Cap: MKTCAP
+    24h: CHANGEPCT24HOUR
+
+
+Data -> DISPLAY -> USD ->
+    Price: PRICE
+    Direct Vol: TOPTIERVOLUME24HOURTO
+    Total Vol: TOTALVOLUME24HTO
+    Top Tier Vol: TOTALTOPTIERVOLUME24HTO
+    Market Cap: MKTCAP
+    24h: CHANGEPCT24HOUR
